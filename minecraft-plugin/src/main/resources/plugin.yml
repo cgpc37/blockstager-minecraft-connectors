@@ -1,0 +1,16 @@
+name: BlockstagerStudioPlugin
+version: 1.0.0
+main: dev.blockstager.plugin.BlockstagerPlugin
+api-version: '1.21'
+description: Puente WebSocket bidireccional (blockstager.proto/1.2) entre servidores Paper/Spigot y Blockstager Studio.
+author: Blockstager Studio
+website: https://github.com/cgpc37/blockstager-minecraft-connectors
+commands:
+  bs:
+    description: Controla el puente WebSocket, acciones remotas y triggers hacia Blockstager Studio.
+    usage: /bs <status|connect|trigger|skin|actions|test-action|reload>
+    permission: blockstager.use
+permissions:
+  blockstager.use:
+    description: Permite ejecutar los comandos /bs de Blockstager Studio.
+    default: op

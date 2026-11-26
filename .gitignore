@@ -1,0 +1,5 @@
+tools/fabric-build/lib/
+tools/fabric-build/build/
+tools/plugin-build/lib/
+tools/plugin-build/build/
+*.jar
