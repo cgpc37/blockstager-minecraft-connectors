@@ -1,0 +1,72 @@
+wsUrl: "ws://127.0.0.1:28490/ws"
+token: ""
+targetPlayer: ""
+syncSkinOnJoin: true
+
+# Puente bidireccional (minecraft.action -> Paper 1.21+)
+allowRemoteActions: true
+actionCooldownMs: 1000
+maxMobCount: 10
+maxSpawnRadius: 16
+maxItemAmount: 64
+maxEffectDurationSec: 120
+maxEffectAmplifier: 4
+
+# Lista blanca de criaturas invocables por defecto (sin jefes destructivos)
+allowedEntities:
+  - zombie
+  - skeleton
+  - creeper
+  - pig
+  - sheep
+  - cow
+  - chicken
+  - wolf
+  - cat
+  - villager
+  - slime
+  - enderman
+  - iron_golem
+  - allay
+  - fox
+  - bee
+  - axolotl
+  - snow_golem
+  - spider
+  - phantom
+  - llama
+  - horse
+  - rabbit
+  - firework_rocket
+
+# Criaturas bloqueadas siempre por seguridad
+blockedEntities:
+  - wither
+  - ender_dragon
+  - warden
+  - elder_guardian
+  - tnt
+  - primed_tnt
+  - tnt_minecart
+  - end_crystal
+
+# Si allowedItems está vacío, permite cualquier ítem válido fuera de blockedItems.
+allowedItems: []
+
+# Ítems de operador o bloqueados por seguridad
+blockedItems:
+  - bedrock
+  - barrier
+  - command_block
+  - chain_command_block
+  - repeating_command_block
+  - command_block_minecart
+  - structure_block
+  - structure_void
+  - jigsaw
+  - debug_stick
+  - light
+  - spawner
+  - end_portal_frame
+  - reinforced_deepslate
+  - knowledge_book
